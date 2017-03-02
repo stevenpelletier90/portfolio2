@@ -1,0 +1,59 @@
+html, body {
+  height: 100%;
+}
+
+.side-nav {
+  background-color: rgb(255, 160, 17);
+}
+
+.nav-fixed {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  margin-bottom: 0px;
+  z-index: 997;
+}
+
+.brand-logo {
+  margin-left: -110px;
+}
+
+.bg {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.social_icons {
+  padding: 5px;
+}
+
+h1 {
+  position: relative;
+  top: -500px;
+  font-size: 200px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  h1 {
+    top: -240px;
+  }
+}
+
+.fa-github:hover {
+  color: black;
+}
+
+.fa-facebook-official:hover {
+  color: black;
+}
+
+.fa-spotify:hover {
+  color: black;
+}
+
+.fa-instagram:hover {
+  color: black;
+}
