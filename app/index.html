@@ -10,16 +10,18 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
 
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
   <link rel="stylesheet" href="/bower_components/materialize/bin/materialize.css" />
   <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
+  <link rel="stylesheet" href="/bower_components/hover/css/hover.css" />
   <!-- endbower -->
   <!-- endbuild -->
 
   <!-- build:css styles/main.css -->
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
 
@@ -28,159 +30,340 @@
   <!-- endbuild -->
 </head>
 
-<body>
-  <span id="top" class="scrollspy"></span>
+<body id="top" class="scrollspy">
 
 
 
+  <div class="bg_image">
 
 
-    <img src="images\flare.png" class="bg z-depth-5 animated fadeIn" alt="Background Image">
-    <div class="main_text center-align">
-    <h1 class="tlt">
+    <h1 class="center-align tlt" id="main_text">
     <ul class="texts">
         <li data-out-effect="fadeOut" data-out-shuffle="true">Web Designer</li>
         <li data-in-effect="fadeIn">Graphic Designer</li>
-        <li data-out-effect="fadeOut" data-out-shuffle="true">Some Title</li>
-        <li data-in-effect="fadeIn" data-out-shuffle="true">Another Title</li>
-        <li data-in-effect="fadeIn"></li>
+        <li data-out-effect="fadeOut" data-out-shuffle="true">Artist</li>
+        <li data-in-effect="fadeIn" data-out-shuffle="true">PLEASE HIRE ME</li>
+        <li data-in-effect="fadeIn">Steven Pelletier</li>
     </ul>
-</h1>
-</div>
+  </h1>
+
+
+
+  </div>
+  <hr class="shine">
 
 
 
 
 
-    <nav class="nav-fixed light-blue darken-4">
-      <div class="nav-wrapper">
-        <a href="#bottom" class="brand-logo center animated shake">Steven Pelletier</a>
-        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-        <ul class="left hide-on-med-and-down">
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#bottom">Contact</a></li>
-        </ul>
-
-      </div>
-    </nav>
-    <ul class="side-nav" id="mobile-demo">
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#bottom">Contact</a></li>
-    </ul>
 
 
 
 
 
-  <div class="container">
+  <nav class="nav-fixed #90a4ae blue-grey lighten-2 ">
+    <div class="nav-wrapper">
+      <a href="#bottom" class="brand-logo center animated shake">Steven Pelletier</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="left hide-on-med-and-down">
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#modal1">Contact</a></li>
+      </ul>
 
-    <div class="row center">
-      <div class="col s12">
-        <h2 class="wow fadeIn" data-wow-duration="5s" data-wow-delay="500ms">Gallery</h2>
-      </div>
-      <div class="col l4 s12">
-        <div class="card hoverable wow slideInLeft" data-wow-duration="1s" data-wow-delay="500ms">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="https://placeimg.com/640/480/any">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-            <p><a href="#">This is a link</a></p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col l4 s12">
-        <div class="card bar">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="https://placeimg.com/640/480/any">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-            <p><a href="#">This is a link</a></p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col l4 s12">
-        <div class="card wow slideInUp">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="https://placeimg.com/640/480/any">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-            <p><a href="#">This is a link</a></p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-          </div>
-        </div>
-      </div>
     </div>
+  </nav>
+  <ul class="side-nav" id="mobile-demo">
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#modal1">Contact</a></li>
+  </ul>
 
+
+  <!-- PORTFOLIO -->
+
+
+  <div class="section" id="portfolio">
+    <div class="container center">
+<h2 class="wow fadeIn" data-wow-duration="5s" data-wow-delay="500ms">Portfolio</h2>
+<div class="divider"></div>
+<br>
+      <div class="row">
+
+
+        <div class="col l4 s12">
+          <div class="card hoverable wow slideInLeft" data-wow-duration="1s" data-wow-delay="500ms">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="images\autopreview.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Oviedo Auto Repair<i class="material-icons right">more_vert</i></span>
+              <p><a href="#modal_port1">More Information</a></p>
+              <p><a href="http://oviedoautorepair11.businesscatalyst.com/" target="_blank">Visit Page</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Oviedo Auto Repair Redesign<i class="material-icons right">close</i></span>
+              <p>Redesign for a local auto repair shop that had specific specifications. Developed with HTML, CSS, JavaScript, and Adobe Muse.</p>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="col l4 s12">
+          <div class="card hoverable">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="images\portpreview.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Adobe Muse Portfolio<i class="material-icons right">more_vert</i></span>
+              <p><a href="#">More Information</a></p>
+              <p><a href="#">Visit Page</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Muse Portfolio<i class="material-icons right">close</i></span>
+              <p>Here is the first version of my portfolio developed entirely with Adobe Muse.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col l4 s12">
+          <div class="card hoverable wow slideInUp">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="images\hennapreview.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Mobile Website<i class="material-icons right">more_vert</i></span>
+              <p><a class="modal-trigger" href="#modal3">More Information</a></p>
+              <p><a class="modal-trigger" href="#modal3">Visit Page</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+              <p>Developed in Spring 2016 for Intermediate Graphic Design. Developed using Adobe Muse.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <hr class="shine">
+
+
+
+  <!-- SKILLS -->
+
+  <div class="section" id="skills">
+    <div class="container center">
+      <h2>Coding Languages</h2>
+      <div class="divider"></div>
+
+      <div class="row">
+        <div class="col s12">
+          <div class="graph hoverable"></div>
+        </div>
+        <div class="col s12 m6 l3">
+          <div id="donut" data-donut="50"></div>
+          <p class="adobe_icons">test</p>
+        </div>
+        <div class="col s12 m6 l3">
+          <div id="donut2" data-donut2="70"></div>
+          <p class="adobe_icons">test</p>
+        </div>
+        <div class="col s12 m6 l3">
+          <div id="donut3" data-donut3="80"></div>
+          <p class="adobe_icons">test</p>
+        </div>
+        <div class="col s12 m6 l3">
+          <div id="donut4" data-donut4="90"></div>
+          <p class="adobe_icons">test</p>
+        </div>
+        <h3>Other Experience</h3>
+        <div class="col s6 m6 l3"><p>s12 m6 l3</p></div>
+    <div class="col s6 m6 l3"><p>s12 m6 l3</p></div>
+    <div class="col s6 m6 l3"><p>s12 m6 l3</p></div>
+    <div class="col s6 m6 l3"><p>s12 m6 l3</p></div>
+    <div class="col s6 m6 l3"><p>s12 m6 l3</p></div>
+<div class="col s6 m6 l3"><p>s12 m6 l3</p></div>
+<div class="col s6 m6 l3"><p>s12 m6 l3</p></div>
+<div class="col s6 m6 l3"><p>s12 m6 l3</p></div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <hr class="shine">
+
+
+  <!-- ABOUT -->
+
+  <div class="section" id="about">
+    <div class="container center">
+
+      <h2>About</h2>
+      <div class="divider"></div>
+
+      <h3 id="me_text">Steven Pelletier</h3>
+
+        <img src="images\me.jpg" class="responsive-img circle" alt="" id="me_img">
+
+
+
+
+
+        <div class="row">
+        <div class="col s12 l8 push-l4"><span class="flow-text">This div is 7-columns wide on pushed to the right by 5-columns.</span></div>
+        <div class="col s12 l4 pull-l8"><span class="flow-text"><img src="images\placeimg_640_480_tech.jpg" class="responsive-img about_img" alt=""></span></div>
+        </div>
+        <div class="row">
+        <div class="col s12 l4 push-l8"><span class="flow-text"><img src="images\placeimg_640_480_tech.jpg" class="responsive-img about_img" alt=""></span></div>
+        <div class="col s12 l8 pull-l4"><span class="flow-text">This div is 7-columns wide on pushed to the right by 5-columns.</span></div>
+        </div>
+
+
+
+
+      <div class="divider"></div>
+      <button data-target="modal1" class="hvr-radial-out waves-light btn" id="contact_button"><i class="material-icons right">launch</i>Contact Me</button>
+
+
+  </div>
+  <hr class="shine">
+
+
+
+
+
+
+
+
+
+    <!-- FOOTER -->
+    <footer class="page-footer blue-grey darken-3 scrollspy" id="bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5>Look around, explore, contact me!</h5>
+            <p><i class="fa fa-envelope bottom_icons" aria-hidden="true"></i>STEVE.D.PELLETIER@GMAIL.COM</p>
+            <p><i class="fa fa-phone bottom_icons" aria-hidden="true"></i>(321)684-1028</p>
+            <a class="grey-text text-lighten-3" href="#modal1">CONTACT</a>
+
+
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="">Follow Me</h5>
+
+            <a class="grey-text text-lighten-3 social_icons hvr-push" href="https://github.com/stevenpelletier90" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+            <a class="grey-text text-lighten-3 social_icons hvr-push" href="https://www.facebook.com/steve.d.pelletier" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+            <a class="grey-text text-lighten-3 social_icons hvr-push" href="https://www.instagram.com/steve.d.pelletier/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          © 2017 Steven Pelletier
+          <a class="grey-text text-lighten-4 right" href="#top">Back to Top</a>
+        </div>
+      </div>
+    </footer>
+
+
+
+  <!-- CONTACT MODAL -->
+
+  <div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h2 class="info_header">Contact Me</h4>
+      <p class="info_text">I would love to collaborate, develop, or work for you!</p>
+
+
+      <!--CONTACT FORM -->
+      <form action="mail.php" id="contactform" method="post" name="contactform">
+        <table width="450px">
+          <tr>
+            <td valign="top"><label for="first_name">First Name</label></td>
+            <td valign="top"><input maxlength="50" name="first_name" size="30" type="text"></td>
+          </tr>
+          <tr>
+            <td valign="top"><label for="last_name">Last Name</label></td>
+            <td valign="top"><input maxlength="50" name="last_name" size="30" type="text"></td>
+          </tr>
+          <tr>
+            <td valign="top"><label for="email">Email Address</label></td>
+            <td valign="top"><input maxlength="80" name="email" size="30" type="text"></td>
+          </tr>
+          <tr>
+            <td valign="top"><label for="telephone">Telephone Number</label></td>
+            <td valign="top"><input maxlength="30" name="telephone" size="30" type="text"></td>
+          </tr>
+          <tr>
+            <td valign="top"><label for="comments">Message</label></td>
+            <td valign="top">
+              <textarea class="materialize-textarea" name="comments"></textarea></td>
+          </tr>
+          <tr>
+
+            <td colspan="2" style="text-align:center">
+              <button id="modal_button" class="btn hvr-radial-out" type="submit" name="action" value="Submit">Submit
+  <i class="material-icons right">send</i>
+</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+
+
+
+
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
   </div>
 
 
-
-
-
-
-
-
-
-  <footer class="page-footer scrollspy" id="bottom">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Contact</h5>
-          <p class="grey-text text-lighten-4">Email: steve.d.pelletier@gmail.com</p>
-          <button data-target="modal1" class="btn">Modal</button>
-        </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Follow Me</h5>
-
-          <a class="grey-text text-lighten-3 social_icons" href="#!"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-          <a class="grey-text text-lighten-3 social_icons" href="#!"><i class="fa fa-spotify fa-2x" aria-hidden="true"></i></a>
-          <a class="grey-text text-lighten-3 social_icons" href="#!"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
-          <a class="grey-text text-lighten-3 social_icons" href="#!"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-
-
-        </div>
-      </div>
+  <!-- WEBSITE port1 MODAL -->
+  <div id="modal_port1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4 class=info_header>Website 1</h4>
+      <p class="info_text">A bunch of text</p>
+      <img class="responsive-img" src="../images/autopreview.png" alt="">
     </div>
-    <div class="footer-copyright">
-      <div class="container">
-        © 2017 Steven Pelletier - University of Central Florida
-        <a class="grey-text text-lighten-4 right" href="#top">Back to Top</a>
-      </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
     </div>
-  </footer>
+  </div>
 
 
-
-    <!-- Modal Structure -->
-    <div id="modal1" class="modal bottom-sheet">
-      <div class="modal-content">
-        <h4>Modal Header</h4>
-        <p>A bunch of text</p>
-      </div>
-      <div class="modal-footer">
-        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-      </div>
+  <!-- WEBSITE port2 MODAL -->
+  <div id="modal_port2" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4 class=info_header>Website 2</h4>
+      <p class="info_text">A bunch of text</p>
+      <img class="responsive-img" src="../images/autopreview.png" alt="">
     </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
 
-
+  <!-- WEBSITE port2 MODAL -->
+  <div id="modal_port3" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4 class=info_header>Website 3</h4>
+      <p class="info_text">A bunch of text</p>
+      <img class="responsive-img" src="../images/autopreview.png" alt="">
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
 
 
 
@@ -207,6 +390,8 @@
     ga('send', 'pageview');
   </script>
 
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+
   <!-- build:js scripts/vendor.js -->
   <!-- bower:js -->
   <script src="/bower_components/jquery/dist/jquery.js"></script>
@@ -215,6 +400,7 @@
   <script src="/bower_components/letteringjs/jquery.lettering.js"></script>
   <script src="/bower_components/textillate/jquery.textillate.js"></script>
   <script src="/bower_components/wow/dist/wow.js"></script>
+  <script src="/bower_components/d3/d3.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 
