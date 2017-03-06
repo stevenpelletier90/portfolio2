@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
-@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Monda:400,700');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500');
+
 
 
 
@@ -21,23 +23,8 @@ html, body {
 
 .brand-logo {
   margin-left: -110px;
-  font-family: 'Permanent Marker', cursive;
-  text-shadow:     0 1px 0 hsl(174,5%,80%),
-                   0 2px 0 hsl(174,5%,75%),
-                   0 3px 0 hsl(174,5%,70%),
-                   0 4px 0 hsl(174,5%,66%),
-                   0 5px 0 hsl(174,5%,64%),
-                   0 6px 0 hsl(174,5%,62%),
-                   0 7px 0 hsl(174,5%,61%),
-                   0 8px 0 hsl(174,5%,60%),
+  font-family: 'Monda', sans-serif;
 
-                   0 0 5px rgba(0,0,0,.05),
-                  0 1px 3px rgba(0,0,0,.2),
-                  0 3px 5px rgba(0,0,0,.2),
-                 0 5px 10px rgba(0,0,0,.2),
-                0 10px 10px rgba(0,0,0,.2),
-                0 20px 20px rgba(0,0,0,.3);
-                letter-spacing: .05em;
 }
 
 
@@ -89,34 +76,35 @@ html, body {
   position: relative;
   width: auto;
   height: 100%;
+  opacity: 0.7;
 
 }
 
 #main_text {
-    color: #fff;
+    font-family: 'Fjalla One', sans-serif;
     position: absolute;
     left: 0;
     right: 0;
     margin: auto;
     top: 300px;
     font-size: 8rem;
-    font-family: 'Permanent Marker', cursive;
-    text-shadow:     0 1px 0 hsl(174,5%,80%),
-                     0 2px 0 hsl(174,5%,75%),
-                     0 3px 0 hsl(174,5%,70%),
-                     0 4px 0 hsl(174,5%,66%),
-                     0 5px 0 hsl(174,5%,64%),
-                     0 6px 0 hsl(174,5%,62%),
-                     0 7px 0 hsl(174,5%,61%),
-                     0 8px 0 hsl(174,5%,60%),
+    width: auto;
+    color: #fff;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
 
-                     0 0 5px rgba(0,0,0,.05),
-                    0 1px 3px rgba(0,0,0,.2),
-                    0 3px 5px rgba(0,0,0,.2),
-                   0 5px 10px rgba(0,0,0,.2),
-                  0 10px 10px rgba(0,0,0,.2),
-                  0 20px 20px rgba(0,0,0,.3);
-                  letter-spacing: .05em;
+}
+
+@media (max-width: 600px) {
+  #main_text {
+    font-family: 'Fjalla One', sans-serif;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 100px;
+    font-size: 6rem;
+    width: auto;
+  }
 }
 
 
@@ -190,14 +178,10 @@ hr {
 
 #skills {
   margin-top: -35px;
-  background: rgba(235,129,0,1);
-  background: -moz-linear-gradient(45deg, rgba(235,129,0,1) 0%, rgba(255,255,255,0.67) 100%);
-  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(235,129,0,1)), color-stop(100%, rgba(255,255,255,0.67)));
-  background: -webkit-linear-gradient(45deg, rgba(235,129,0,1) 0%, rgba(255,255,255,0.67) 100%);
-  background: -o-linear-gradient(45deg, rgba(235,129,0,1) 0%, rgba(255,255,255,0.67) 100%);
-  background: -ms-linear-gradient(45deg, rgba(235,129,0,1) 0%, rgba(255,255,255,0.67) 100%);
-  background: linear-gradient(45deg, rgba(235,129,0,1) 0%, rgba(255,255,255,0.67) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb8100', endColorstr='#ffffff', GradientType=1 );
+  background: -moz-linear-gradient(45deg, rgba(219,54,32,0.61) 0%, rgba(255,146,38,0.44) 50%, rgba(232,244,102,0.26) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, rgba(219,54,32,0.61) 0%,rgba(255,146,38,0.44) 50%,rgba(232,244,102,0.26) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, rgba(219,54,32,0.61) 0%,rgba(255,146,38,0.44) 50%,rgba(232,244,102,0.26) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9cdb3620', endColorstr='#42e8f466',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 
@@ -247,6 +231,14 @@ h2 {
                 font-size: 5.5em;
 }
 
+h3 {
+  color:rgb(13, 67, 106);
+  font-family: 'Quicksand', sans-serif;
+  font-size: 4.2em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 h5 {
     font-style: italic;
     font-weight: 300;
@@ -256,13 +248,10 @@ h5 {
 
 #me_img {
   height: auto;
-  width: 250px;
+  width: 275px;
+  margin-bottom: 60px;
 }
 
-
-#me_text {
-
-}
 
 #contact_button {
   margin-top: 35px;
@@ -276,10 +265,98 @@ h5 {
   border-radius: 20px;
 }
 
-p {
+#resume_button {
+  background-color: black;
+  border-radius: 20px;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  }
+
+footer p {
   color: #fff;
 }
 
 .bottom_icons {
   padding-right: 8px;
+}
+
+.modal img {
+  width: 600px;
+  display: block;
+}
+
+.adobe_icons {
+    width: 200px;
+
+}
+
+.adobe_icons2 {
+  width: 200px;
+  margin-top: 20px;
+}
+
+#bootstrap_icon {
+  width: 140px;
+  margin-top: 30px;
+}
+
+#jquery_icon {
+  width: 160px;
+  margin-top: 20px;
+}
+
+#sql_icon {
+  margin-top: 30px;
+  width: 230px;
+}
+
+ul a:hover {
+	color: rgb(254, 164, 71);
+}
+
+.about_text {
+    font-family: 'Quicksand', sans-serif;
+    color: rgba(49, 100, 105, 0.95);
+}
+
+.about_img {
+  width: 300px;
+}
+
+.paragraph {
+
+}
+
+#bg_logo {
+  position: absolute;
+  left: 0;
+  right: 1000px;
+  margin: auto;
+  top: 275px;
+}
+
+@media (max-width: 600px) {
+  #bg_logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 300px;
+  }
+}
+
+
+#bg_logo2 {
+  position: absolute;
+  left: 360px;
+  right: 0;
+  margin: auto;
+  top: 0;
+  width: 100px;
+}
+
+@media (max-width: 600px) {
+  #bg_logo2 {
+    display: none;
+  }
 }
